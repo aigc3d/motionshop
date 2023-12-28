@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MotionShop">
+  <meta name="keywords" content="MotionShop, Motion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MotionShop</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-P37JTNZ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'GTM-P37JTNZ2');
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/aigc3d">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://aigc3d.github.io/richdreamer">
+            RichDreamer
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MotionShop</h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">XR Lab, Institute for Intelligent Computing, Alibaba Group</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/embed/6gQ1VWiKoc0?si=Q7yL4mWmBN3cUaYi"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>YouTube</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>BiliBili</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://modelscope.cn/studios/Damo_XR_Lab/motionshop/summary"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <!-- <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span> -->
+                  <span>Live Demo (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item item-dance_girl">
+                <video poster="" id="dance_girl" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/dance_girl.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-dance_robot">
+                <video poster="" id="dance_robot" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/dance_robot.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-dance_man">
+                <video poster="" id="dance_man" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/dance_man.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-kongfu_pig">
+                <video poster="" id="kongfu_pig" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/kongfu_pig.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <h3 class="title is-4">Abstract</h3>
+          <p>
+            We present a framework to replace the characters in video to 3D avatars.
+            Our framework consists of two parts: 1) a video processing pipeline to extract the
+            inpainted background video sequence, 2) a pose estimation and rendering pipeline to
+            generate the avatar video sequence. By parallelizing the two pipelines and using a high 
+            performance self-developed ray-tracing renderer, the whole process can be completed 
+            <b>in minutes</b>.
+          </p>
+          <img src="./static/images/architecture.png">
+          <h3 class="title is-4">Character Detection</h3>
+          <p>
+            By tightly fusing the text information with the existing closed-set detectors using the 
+            transformer-based framework, zero-shot object detection can also perform well.  The interested 
+            target candidates are detected by an open-set object detection method,  followed by a dominant 
+            selection method to determine the final target area.
+          </p>
+          <h3 class="title is-4">Segmentation & Tracking</h3>
+          <p>
+            Once the target is successfully detected, the pixel-wise target area is tracked by a video 
+            object segmentation tracking method, which is initialized and refined by the widely used 
+            zero-shot segmentation method, <a href="https://segment-anything.com/">segment anything model
+            (SAM)</a>. Compared to directly using SAM, the temporal correspondence is promoted to better 
+            handle the video segmentation task.
+          </p>
+          <h3 class="title is-4">Inpainting</h3>
+          <p>
+            The remaining image area is completed by video inpainting. Specifically, a recurrent 
+            flow completion is used to recover the corrupted flow fields, a dual-domain propagation on both 
+            the image and feature domains is adopted to enhance both global and local temporal consistency, 
+            also, a sparse strategy that considers only a subset of the tokens improves the efficiency and 
+            reduces memory consumption while maintaining performance.
+          </p>
+          <h3 class="title is-4">Pose Estimation</h3>
+          <p>
+            Given the character video sequence, human pose estimation is applied to localize the joint 
+            keypoints. The <a href="https://smpl.is.tue.mpg.de/">SMPL</a> body model is used to represent 
+            the 3D human body, which is a widely used parametric model for human body shape and pose estimation.
+          </p>
+          <h3 class="title is-4">Animation Retargeting</h3>
+          <p>
+            The estimated shape and pose is remapped onto the selected 3D model. Then this model can play as 
+            naturally and smoothly as the character in the original video. Satisfactory results is achieved 
+            even when there are significant differences between the original character and the new model.
+          </p>
+          <h3 class="title is-4">Light Estimation</h3>
+          <p>
+            When the new 3D model is replacing the interested charactor, the lighting conditions needs to be 
+            consistent with the original video. We apply lighting estimation to better integrate the new 3D 
+            model and original scene. In the future, we will also use lighting estimation for shadows.
+          </p>
+          <h3 class="title is-4">Rendering</h3>                
+          <p>
+            A path tracing rendering engine is customized for rendering the new 3D model. It is coupled with a precise 
+            material system, supplemented by algorithms such as motion blur, temporal anti-aliasing, and temporal 
+            denoising. This engine combines photorealism with speed, laying a solid foundation for users to 
+            obtain videos more efficiently.
+          </p>  
+          <h3 class="title is-4">Composing</h3>
+          <p>
+            Finally, the rendered image is composited with the original video to generate the final video.
+          </p>          
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <video id="teaser" autoplay="" muted="true" loop="" playsinline="" height="100%">
+            <source src="./static/videos/dance.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p> Website template from <a href="https://nerfies.github.io//">Nerfies</a>. We thank the authors for the open-source code </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
