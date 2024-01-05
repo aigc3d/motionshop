@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MotionShop">
-  <meta name="keywords" content="MotionShop, Motion">
+        content="Motionshop">
+  <meta name="keywords" content="Motionshop, Motion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MotionShop</title>
+  <title>Motionshop</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-P37JTNZ2"></script>
@@ -65,6 +65,9 @@
           <a class="navbar-item" href="https://aigc3d.github.io/richdreamer">
             RichDreamer
           </a>
+          <a class="navbar-item" href="https://fdyuandong.github.io/Objaverse-High-Quality-Rendering-Dataset/">
+            G-buffer Objaverse
+          </a>
         </div>
       </div>
     </div>
@@ -77,10 +80,41 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MotionShop</h1>
-          
+          <h1 class="title is-1 publication-title">Motionshop</h1>
+
           <div class="is-size-5 publication-authors">
-            <span class="author-block">XR Lab, Institute for Intelligent Computing, Alibaba Group</span>
+            <!-- Paper authors -->
+            <span class="author-block">
+            <a href="mailto:miracle.zjf@alibaba-inc.com" target="_blank">Junfei Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:doris.yxd@alibaba-inc.com" target="_blank">Xiaodan Ye</a><sup>1</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:eric.xc@alibaba-inc.com" target="_blank">Chao Xu</a><sup>1</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:yunzong.wf@alibaba-inc.com" target="_blank">Feng Wang</a><sup>2</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:ranqing.rq@alibaba-inc.com" target="_blank">Qing Ran</a><sup>1</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:kejie.qkj@alibaba-inc.com" target="_blank">Kejie Qiu</a><sup>1</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:yixuan.wgy@alibaba-inc.com" target="_blank">Guangyuan Wang</a><sup>1</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:shuyun.ljf@alibaba-inc.com" target="_blank">Jianfeng Luo</a><sup>2</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:wujunyao.wjy@alibaba-inc.com" target="_blank">Junyao Wu</a><sup>2</sup>,</span>
+            <span class="author-block">
+            <a href="mailto:chenggang.cg@alibaba-inc.com" target="_blank">Gang Cheng</a>,</span>
+            <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=GHOQKCwAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank">Zilong Dong</a>,</span>
+            <span class="author-block">
+            <a href="https://scholar.google.com/citations?user=FJwtMf0AAAAJ&amp;hl=zh-CN" target="_blank">Liefeng Bo</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Institute for Intelligent Computing, Alibaba Group</span>
+            <span class="eql-cntrb"><small><br><sup>1</sup>Algorithm Team &nbsp;</small></span>
+            <span class="eql-cntrb"><small><sup>2</sup>Engineering Team</small></span>
           </div>
 
           <div class="column has-text-centered">
@@ -126,27 +160,27 @@
         <div class="columns is-centered">
           <div class="column is-four-fifths">
             <div id="results-carousel" class="carousel results-carousel">
-              <div class="item item-dance_girl">
-                <video poster="" id="dance_girl" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/dance_girl.mp4"
-                          type="video/mp4">
-                </video>
-              </div>
               <div class="item item-dance_robot">
                 <video poster="" id="dance_robot" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/dance_robot.mp4"
                           type="video/mp4">
                 </video>
               </div>
-              <div class="item item-dance_man">
-                <video poster="" id="dance_man" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/dance_man.mp4"
+              <div class="item item-dance_girl">
+                <video poster="" id="dance_girl" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/dance_girl.mp4"
                           type="video/mp4">
                 </video>
               </div>
               <div class="item item-kongfu_pig">
                 <video poster="" id="kongfu_pig" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/kongfu_pig.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-dance_man">
+                <video poster="" id="dance_man" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/dance_man.mp4"
                           type="video/mp4">
                 </video>
               </div>
@@ -169,8 +203,8 @@
             Our framework consists of two parts: 1) a video processing pipeline to extract the
             inpainted background video sequence, 2) a pose estimation and rendering pipeline to
             generate the avatar video sequence. By parallelizing the two pipelines and using a high 
-            performance self-developed ray-tracing renderer, the whole process can be completed 
-            <b>in minutes</b>.
+            performance ray-tracing renderer <a href="https://developer.aliyun.com/article/784784?spm=a2c6h.14164896.0.0.d7c247c5q1Pb9G&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@784784._.ID_784784-RL_tidejs-LOC_search~UND~community~UND~item-OR_ser-V_3-P0_0">TIDE</a>,
+            the whole process can be completed <b>in minutes</b>.
           </p>
           <img src="./static/images/architecture.png">
           <h3 class="title is-4">Character Detection</h3>
@@ -198,9 +232,10 @@
           </p>
           <h3 class="title is-4">Pose Estimation</h3>
           <p>
-            Given the character video sequence, human pose estimation is applied to localize the joint 
-            keypoints. The <a href="https://smpl.is.tue.mpg.de/">SMPL</a> body model is used to represent 
-            the 3D human body, which is a widely used parametric model for human body shape and pose estimation.
+            Given the character video sequence, the pose estimation method <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhuo_Towards_Stable_Human_Pose_Estimation_via_Cross-View_Fusion_and_Foot_CVPR_2023_paper.pdf">CVFFS</a>
+            is applied to estimate stable human pose. The <a href="https://smpl.is.tue.mpg.de/">SMPL</a> 
+            human body model is used to represent the 3D human body, which is a widely used parametric model for 
+            human body shape and pose estimation.
           </p>
           <h3 class="title is-4">Animation Retargeting</h3>
           <p>
@@ -216,10 +251,10 @@
           </p>
           <h3 class="title is-4">Rendering</h3>                
           <p>
-            A path tracing rendering engine is customized for rendering the new 3D model. It is coupled with a precise 
-            material system, supplemented by algorithms such as motion blur, temporal anti-aliasing, and temporal 
-            denoising. This engine combines photorealism with speed, laying a solid foundation for users to 
-            obtain videos more efficiently.
+            A path tracing rendering engine <a href="https://developer.aliyun.com/article/784784?spm=a2c6h.14164896.0.0.d7c247c5q1Pb9G&scm=20140722.S_community@@%E6%96%87%E7%AB%A0@@784784._.ID_784784-RL_tidejs-LOC_search~UND~community~UND~item-OR_ser-V_3-P0_0">TIDE</a>
+            is used to render the new 3D model. It is coupled with a precise material system, supplemented 
+            by algorithms such as motion blur, temporal anti-aliasing, and temporal denoising. This engine 
+            combines photorealism with speed, laying a solid foundation for users to obtain videos more efficiently.
           </p>  
           <h3 class="title is-4">Composing</h3>
           <p>
