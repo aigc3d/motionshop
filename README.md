@@ -11,7 +11,6 @@ An application of replacing the characters in video with 3D avatars.
 
 $\color{red}{\textsf{🔥New }}$
 [2024/01/18] The experience demo of MotionShop is now available on <a href = 'https://modelscope.cn/studios/Damo_XR_Lab/motionshop/summary' >ModelScope</a>.
-<a href="https://modelscope.cn/studios/Damo_XR_Lab/motionshop/summary"  style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/ModelScope-MotionShop-orange'></a>
 
 We are working hard to bring our live demo to 🤗<a href = 'https://huggingface.co/spaces/modelscope/Motionshop'>HuggingFace</a>🤗, thanks for your patience.
 
