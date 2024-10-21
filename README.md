@@ -9,10 +9,13 @@ An application of replacing the characters in video with 3D avatars.
 
 ## 📜 News
 
-$\color{red}{\textsf{🔥New }}$
+$\color{red}{\textsf{🔥New🔥}}$
+[2024/10/21] <a href = 'https://aigc3d.github.io/motionshop-2/' >Motionshop-2</a> has been released.
+
+[2024/08/14] Our application is now available on the <a href = 'https://m.tongyi.aliyun.com/app/tongyi/tongyi-hybrid/download-app?spm=5176.29169716&code=peftkjdk0x' >Tongyi app </a>.
+
 [2024/01/18] The experience demo of MotionShop is now available on <a href = 'https://modelscope.cn/studios/Damo_XR_Lab/motionshop/summary' >ModelScope</a>.
 
-We are working hard to bring our live demo to 🤗<a href = 'https://huggingface.co/spaces/modelscope/Motionshop'>HuggingFace</a>🤗, thanks for your patience.
 
 ## 📌 Notes
 
